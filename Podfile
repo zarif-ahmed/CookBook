@@ -10,6 +10,9 @@ def sharedpods
   # Pods for CookBook
   pod 'SwiftLint'
   pod 'RealmSwift', '5.4.0'
+  pod 'Alamofire'
+  pod 'PromiseKit'
+  pod 'AlamofireImage'
 end
 
 target 'CookBook' do
