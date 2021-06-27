@@ -25,6 +25,7 @@
 		CC3EF4EB2688D64800A6252B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4EA2688D64800A6252B /* Storyboarded.swift */; };
 		CC3EF4F22688DF5E00A6252B /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4F02688DF5E00A6252B /* DetailCell.swift */; };
 		CC3EF4F32688DF5E00A6252B /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3EF4F12688DF5E00A6252B /* DetailCell.xib */; };
+		CC3EF4F82688EC0300A6252B /* FavoritesVC+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4F72688EC0300A6252B /* FavoritesVC+Data.swift */; };
 		CCD195E4268847D2007A83B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD195E3268847D2007A83B2 /* AppDelegate.swift */; };
 		CCD195E8268847D2007A83B2 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD195E7268847D2007A83B2 /* DashboardVC.swift */; };
 		CCD195EB268847D2007A83B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD195E9268847D2007A83B2 /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		CC3EF4EA2688D64800A6252B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		CC3EF4F02688DF5E00A6252B /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		CC3EF4F12688DF5E00A6252B /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		CC3EF4F72688EC0300A6252B /* FavoritesVC+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC+Data.swift"; sourceTree = "<group>"; };
 		CCD195E0268847D2007A83B2 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD195E3268847D2007A83B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD195E7268847D2007A83B2 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3EF464268889AC00A6252B /* FavoritesVC.swift */,
+				CC3EF4F72688EC0300A6252B /* FavoritesVC+Data.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -729,6 +732,7 @@
 				CC3EF4B42688934100A6252B /* DashboardVC+Data.swift in Sources */,
 				CC3EF4AB2688920800A6252B /* NibLoadableView.swift in Sources */,
 				CC3EF465268889AC00A6252B /* FavoritesVC.swift in Sources */,
+				CC3EF4F82688EC0300A6252B /* FavoritesVC+Data.swift in Sources */,
 				CCD196D1268871B1007A83B2 /* MealAPI.swift in Sources */,
 				CC3EF46F26888A4600A6252B /* SearchMealCell.swift in Sources */,
 				CCD1967E268867A3007A83B2 /* NetworkService.swift in Sources */,

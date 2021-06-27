@@ -86,7 +86,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-hP-VC4">
                                 <rect key="frame" x="20" y="64" width="80" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="2CG-WP-YdR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="2CG-WP-YdR"/>
                                     <constraint firstAttribute="height" constant="44" id="RrQ-dg-REd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>

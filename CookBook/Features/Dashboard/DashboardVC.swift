@@ -29,7 +29,7 @@ final class DashboardVC: UIViewController {
         }
     }
     
-    var meals: [MealModel]   = [] {
+    var meals: [MealModel] = [] {
         didSet {
             reloadUI()
         }
@@ -67,7 +67,7 @@ final class DashboardVC: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    @objc func tapHandler() {
+    @objc private func tapHandler() {
         searchHandler()
     }
     
@@ -82,7 +82,7 @@ final class DashboardVC: UIViewController {
         }
     }
     
-    private func loadDetails(for meal: MealModel?) {
+    private func loadDetailsVC(for meal: MealModel?) {
         guard let mealModel = meal else { return }
         
         let detailsVC       = MealDetailsVC.instantiate()
@@ -154,7 +154,7 @@ extension DashboardVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = meals[indexPath.row]
-        loadDetails(for: model)
+        loadDetailsVC(for: model)
     }
 }
 

@@ -19,7 +19,7 @@ final class FavoritesVC: UIViewController {
         }
     }
     
-    private var meals: [MealModel] = []
+    var meals: [MealModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,32 +37,7 @@ final class FavoritesVC: UIViewController {
         }
     }
     
-    private func loadFavorites() {
-        do {
-            let realm = try Realm()
-            let favorites = realm.objects(MealModel.self).filter({ $0.isLiked })
-            
-            meals = Array(favorites)
-            
-            reloadUI()
-        } catch { }
-        
-    }
-    
-    private func updateLikeStatus(index: Int) {
-        do {
-            let selectedMeal = meals[index]
-            let realm = try Realm()
-            try realm.write {
-                selectedMeal.isLiked.toggle()
-                realm.add(selectedMeal, update: .all)
-                
-                reloadUI()
-            }
-        } catch { }
-    }
-    
-    private func loadDetails(for meal: MealModel?) {
+    private func loadDetailsVC(for meal: MealModel?) {
         guard let mealModel = meal else { return }
         
         let detailsVC       = MealDetailsVC.instantiate()
@@ -100,6 +75,6 @@ extension FavoritesVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = meals[indexPath.row]
-        loadDetails(for: model)
+        loadDetailsVC(for: model)
     }
 }

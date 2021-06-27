@@ -50,7 +50,7 @@ final class RandomMealCell: UITableViewCell, NibLoadableView {
         
         mealImageView.setImage(with: model?.imageURL)
         
-        updateLikeStatus()
+        updateLikeUI()
     }
     
     private func addGradient() {
@@ -67,7 +67,7 @@ final class RandomMealCell: UITableViewCell, NibLoadableView {
         }
     }
     
-    private func updateLikeStatus() {
+    private func updateLikeUI() {
         let isLiked = model?.isLiked == true
         let title   = isLiked ? "Liked" : "Like"
         

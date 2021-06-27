@@ -36,16 +36,13 @@ extension DashboardVC {
     }
     
     func updateLikeStatus(for index: Int) {
-        do {
-            let selectedMeal = meals[index]
-            let realm = try Realm()
-            try realm.write {
-                selectedMeal.isLiked.toggle()
-                realm.add(selectedMeal, update: .all)
-                
-                reloadUI()
+        let selectedMeal = meals[index]
+        selectedMeal.toggleLikeStatus()
+            .done { _ in }
+            .catch { _ in }
+            .finally { [weak self] in
+                self?.reloadUI()
             }
-        } catch { }
     }
     
     private func updateMealDatasource(with meals: [MealModel]) {

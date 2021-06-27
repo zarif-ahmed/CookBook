@@ -7,6 +7,7 @@
 
 import Foundation
 import RealmSwift
+import PromiseKit
 
 @objcMembers
 final class MealModel: Object, Codable {
@@ -69,5 +70,20 @@ final class MealModel: Object, Codable {
     
     required init() {
         // do nothing
+    }
+    
+    func toggleLikeStatus() -> Promise<Void> {
+        let (promise, resolver) = Promise<Void>.pending()
+        do {
+            let realm = try Realm()
+            try realm.write {
+                isLiked.toggle()
+                realm.add(self, update: .all)
+                resolver.fulfill_()
+            }
+        } catch {
+            resolver.fulfill_()
+        }
+        return promise
     }
 }

@@ -31,12 +31,12 @@ final class DetailCell: UITableViewCell, NibLoadableView {
     }
     
     private func clearUI() {
-        titleLabel.text = ""
+        titleLabel.text       = ""
         descriptionLabel.text = ""
     }
 
     func updateUI() {
-        titleLabel.text = model?.title
+        titleLabel.text       = model?.title
         descriptionLabel.text = model?.description
     }
 }

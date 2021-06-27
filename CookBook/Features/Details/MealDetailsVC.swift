@@ -16,12 +16,12 @@ final class MealDetailsVC: UIViewController, Storyboarded {
         
     }
     
-    @IBOutlet private weak var backButton: UIButton!
-    @IBOutlet private weak var likeButton: UIButton!
-    @IBOutlet private weak var mealTitleLabel: UILabel!
-    @IBOutlet private weak var mealImageView: UIImageView!
+    @IBOutlet private weak var backButton     : UIButton!
+    @IBOutlet private weak var likeButton     : UIButton!
+    @IBOutlet private weak var mealTitleLabel : UILabel!
+    @IBOutlet private weak var mealImageView  : UIImageView!
     
-    @IBOutlet private weak var mealTableView: UITableView! {
+    @IBOutlet private weak var mealTableView  : UITableView! {
         didSet {
             mealTableView.register(DetailCell.self)
             
@@ -76,18 +76,13 @@ final class MealDetailsVC: UIViewController, Storyboarded {
     }
     
     private func updateLikeStatus() {
-        do {
-            guard let selectedMeal = mealModel else { return }
-            let realm = try Realm()
-            try realm.write {
-                selectedMeal.isLiked.toggle()
-                realm.add(selectedMeal, update: .all)
-                
-                DispatchQueue.main.async { [weak self] in
-                    self?.updateLikeUI()
-                }
+        guard let selectedMeal = mealModel else { return }
+        selectedMeal.toggleLikeStatus()
+            .done { _ in }
+            .catch { _ in }
+            .finally { [weak self] in
+                self?.updateLikeUI()
             }
-        } catch { }
     }
 
     private func updateLikeUI() {

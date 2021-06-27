@@ -8,16 +8,16 @@
 import UIKit
 
 struct MealCellModel {
-    var title: String?
+    var title   : String?
     var imageURL: String?
-    var isLiked: Bool = false
+    var isLiked : Bool = false
 }
 
 final class SearchMealCell: UITableViewCell, NibLoadableView {
     
     @IBOutlet private weak var mealImageView: UIImageView!
     @IBOutlet private weak var titleLabel   : UILabel!
-    @IBOutlet private weak var likeButton: UIButton!
+    @IBOutlet private weak var likeButton   : UIButton!
     
     var model: MealCellModel? {
         didSet {
