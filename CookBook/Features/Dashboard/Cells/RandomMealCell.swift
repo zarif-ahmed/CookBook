@@ -13,6 +13,8 @@ final class RandomMealCell: UITableViewCell, NibLoadableView {
     @IBOutlet private weak var titleLabel   : UILabel!
     @IBOutlet private weak var likeButton   : UIButton!
     
+    private var gradient: CAGradientLayer?
+    
     var model: MealCellModel? {
         didSet {
             updateUI()
@@ -33,6 +35,12 @@ final class RandomMealCell: UITableViewCell, NibLoadableView {
         clearUI()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        addGradient()
+    }
+    
     @IBAction private func likeAction(_ sender: Any) {
         didPressLikeButton?()
     }
@@ -43,6 +51,20 @@ final class RandomMealCell: UITableViewCell, NibLoadableView {
         mealImageView.setImage(with: model?.imageURL)
         
         updateLikeStatus()
+    }
+    
+    private func addGradient() {
+        removeGradient()
+        
+        gradient         = CAGradientLayer()
+        gradient?.frame  = bounds
+        let startColor   = UIColor(white: 1, alpha: 0).cgColor
+        let endColor     = UIColor(white: 0, alpha: 0.5).cgColor
+        gradient?.colors = [startColor, endColor]
+        
+        if let gradientLayer = gradient {
+            mealImageView.layer.addSublayer(gradientLayer)
+        }
     }
     
     private func updateLikeStatus() {
@@ -57,5 +79,12 @@ final class RandomMealCell: UITableViewCell, NibLoadableView {
     private func clearUI() {
         titleLabel.text     = ""
         mealImageView.image = nil
+        
+        removeGradient()
+    }
+    
+    private func removeGradient() {
+        gradient?.removeFromSuperlayer()
+        gradient = nil
     }
 }

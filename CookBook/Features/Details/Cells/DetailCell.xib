@@ -21,13 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="296" height="120"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTS-3O-Rr3">
-                                <rect key="frame" x="20" y="10" width="256" height="19.5"/>
+                                <rect key="frame" x="0.0" y="10" width="276" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9I-9f-3jP">
-                                <rect key="frame" x="20" y="36.5" width="256" height="17"/>
+                                <rect key="frame" x="0.0" y="36.5" width="276" height="17"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,7 +38,7 @@
                         <constraints>
                             <constraint firstItem="S9I-9f-3jP" firstAttribute="top" secondItem="mTS-3O-Rr3" secondAttribute="bottom" constant="7" id="2KH-An-mML"/>
                             <constraint firstItem="mTS-3O-Rr3" firstAttribute="top" secondItem="QV5-bn-OKD" secondAttribute="top" constant="10" id="2ls-90-M8E"/>
-                            <constraint firstItem="mTS-3O-Rr3" firstAttribute="leading" secondItem="QV5-bn-OKD" secondAttribute="leading" constant="20" id="40A-sn-ohC"/>
+                            <constraint firstItem="mTS-3O-Rr3" firstAttribute="leading" secondItem="QV5-bn-OKD" secondAttribute="leading" id="40A-sn-ohC"/>
                             <constraint firstAttribute="trailing" secondItem="mTS-3O-Rr3" secondAttribute="trailing" constant="20" id="Shc-BI-Zyb"/>
                             <constraint firstItem="S9I-9f-3jP" firstAttribute="trailing" secondItem="mTS-3O-Rr3" secondAttribute="trailing" id="TEZ-s0-j3H"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="S9I-9f-3jP" secondAttribute="bottom" constant="20" id="Tja-3I-WeF"/>
