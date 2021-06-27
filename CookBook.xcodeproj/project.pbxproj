@@ -10,6 +10,21 @@
 		3019BE14C24AC315C3B9CE5F /* libPods-CookBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBA297D2467823AC4E1F990 /* libPods-CookBookTests.a */; };
 		3CAB4BDE769A4F900F07DBCA /* Pods_CookBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D47C937D3D0C2CAE3E2781 /* Pods_CookBook.framework */; };
 		5679CD08375D0C93443E7AF9 /* libPods-CookBookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0FE612D815B412F4E5E2D /* libPods-CookBookUITests.a */; };
+		CC3EF465268889AC00A6252B /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF464268889AC00A6252B /* FavoritesVC.swift */; };
+		CC3EF46F26888A4600A6252B /* SearchMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF46D26888A4600A6252B /* SearchMealCell.swift */; };
+		CC3EF47026888A4600A6252B /* SearchMealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3EF46E26888A4600A6252B /* SearchMealCell.xib */; };
+		CC3EF47626888A6000A6252B /* RandomMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF47426888A6000A6252B /* RandomMealCell.swift */; };
+		CC3EF47726888A6000A6252B /* RandomMealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3EF47526888A6000A6252B /* RandomMealCell.xib */; };
+		CC3EF49426888EA500A6252B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF49326888EA500A6252B /* UIImageView+Extension.swift */; };
+		CC3EF4A4268891FF00A6252B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4A3268891FF00A6252B /* UITableView+Extension.swift */; };
+		CC3EF4AB2688920800A6252B /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4A92688920800A6252B /* NibLoadableView.swift */; };
+		CC3EF4AC2688920800A6252B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4AA2688920800A6252B /* ReusableView.swift */; };
+		CC3EF4B42688934100A6252B /* DashboardVC+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4B32688934100A6252B /* DashboardVC+Data.swift */; };
+		CC3EF4C82688A63B00A6252B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4C72688A63B00A6252B /* UIViewController+Extension.swift */; };
+		CC3EF4E32688D5E700A6252B /* MealDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4E22688D5E700A6252B /* MealDetailsVC.swift */; };
+		CC3EF4EB2688D64800A6252B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4EA2688D64800A6252B /* Storyboarded.swift */; };
+		CC3EF4F22688DF5E00A6252B /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EF4F02688DF5E00A6252B /* DetailCell.swift */; };
+		CC3EF4F32688DF5E00A6252B /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3EF4F12688DF5E00A6252B /* DetailCell.xib */; };
 		CCD195E4268847D2007A83B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD195E3268847D2007A83B2 /* AppDelegate.swift */; };
 		CCD195E8268847D2007A83B2 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD195E7268847D2007A83B2 /* DashboardVC.swift */; };
 		CCD195EB268847D2007A83B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD195E9268847D2007A83B2 /* Main.storyboard */; };
@@ -59,6 +74,21 @@
 		7FF8F8D11E92FCDCA5B518D4 /* Pods-CookBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBook.debug.xcconfig"; path = "Target Support Files/Pods-CookBook/Pods-CookBook.debug.xcconfig"; sourceTree = "<group>"; };
 		9523862F0A759E03D449C737 /* Pods-CookBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookUITests.release.xcconfig"; path = "Target Support Files/Pods-CookBookUITests/Pods-CookBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B7B925077A0660629912291 /* Pods-CookBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookUITests.debug.xcconfig"; path = "Target Support Files/Pods-CookBookUITests/Pods-CookBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3EF464268889AC00A6252B /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		CC3EF46D26888A4600A6252B /* SearchMealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealCell.swift; sourceTree = "<group>"; };
+		CC3EF46E26888A4600A6252B /* SearchMealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMealCell.xib; sourceTree = "<group>"; };
+		CC3EF47426888A6000A6252B /* RandomMealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMealCell.swift; sourceTree = "<group>"; };
+		CC3EF47526888A6000A6252B /* RandomMealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomMealCell.xib; sourceTree = "<group>"; };
+		CC3EF49326888EA500A6252B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		CC3EF4A3268891FF00A6252B /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		CC3EF4A92688920800A6252B /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		CC3EF4AA2688920800A6252B /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		CC3EF4B32688934100A6252B /* DashboardVC+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+Data.swift"; sourceTree = "<group>"; };
+		CC3EF4C72688A63B00A6252B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		CC3EF4E22688D5E700A6252B /* MealDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsVC.swift; sourceTree = "<group>"; };
+		CC3EF4EA2688D64800A6252B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		CC3EF4F02688DF5E00A6252B /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		CC3EF4F12688DF5E00A6252B /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		CCD195E0268847D2007A83B2 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD195E3268847D2007A83B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD195E7268847D2007A83B2 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
@@ -142,6 +172,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CC3EF4632688898E00A6252B /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF464268889AC00A6252B /* FavoritesVC.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		CC3EF46C26888A1000A6252B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF47426888A6000A6252B /* RandomMealCell.swift */,
+				CC3EF47526888A6000A6252B /* RandomMealCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CC3EF4A82688920800A6252B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF4A92688920800A6252B /* NibLoadableView.swift */,
+				CC3EF4AA2688920800A6252B /* ReusableView.swift */,
+				CC3EF4EA2688D64800A6252B /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CC3EF4CC2688C52A00A6252B /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF4CD2688C53300A6252B /* Cells */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		CC3EF4CD2688C53300A6252B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF46D26888A4600A6252B /* SearchMealCell.swift */,
+				CC3EF46E26888A4600A6252B /* SearchMealCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CC3EF4DD2688D4F100A6252B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF4CC2688C52A00A6252B /* Reusable */,
+				CCD19621268848C1007A83B2 /* Storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CC3EF4E12688D5CB00A6252B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF4E22688D5E700A6252B /* MealDetailsVC.swift */,
+				CC3EF4EF2688DF2A00A6252B /* Cells */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CC3EF4EF2688DF2A00A6252B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EF4F02688DF5E00A6252B /* DetailCell.swift */,
+				CC3EF4F12688DF5E00A6252B /* DetailCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CCD195D7268847D2007A83B2 = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +301,9 @@
 			children = (
 				CCD19622268848F8007A83B2 /* Launch Screen */,
 				CCD1961E26884894007A83B2 /* Dashboard */,
-				CCD19621268848C1007A83B2 /* Storyboard */,
+				CC3EF4E12688D5CB00A6252B /* Details */,
+				CC3EF4632688898E00A6252B /* Favorites */,
+				CC3EF4DD2688D4F100A6252B /* UI */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -217,6 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				CCD195E7268847D2007A83B2 /* DashboardVC.swift */,
+				CC3EF4B32688934100A6252B /* DashboardVC+Data.swift */,
+				CC3EF46C26888A1000A6252B /* Cells */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -297,6 +402,7 @@
 			children = (
 				CCD1968A26886838007A83B2 /* Utility.swift */,
 				CCD19694268868A3007A83B2 /* Constants.swift */,
+				CC3EF4A82688920800A6252B /* Protocols */,
 				CCD196892688682B007A83B2 /* Extensions */,
 			);
 			path = Utilities;
@@ -305,7 +411,10 @@
 		CCD196892688682B007A83B2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CC3EF4A3268891FF00A6252B /* UITableView+Extension.swift */,
 				CCD1968F26886880007A83B2 /* Resolver+Extension.swift */,
+				CC3EF49326888EA500A6252B /* UIImageView+Extension.swift */,
+				CC3EF4C72688A63B00A6252B /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -462,9 +571,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3EF47026888A4600A6252B /* SearchMealCell.xib in Resources */,
 				CCD195F0268847D5007A83B2 /* LaunchScreen.storyboard in Resources */,
+				CC3EF4F32688DF5E00A6252B /* DetailCell.xib in Resources */,
 				CCD195ED268847D5007A83B2 /* Assets.xcassets in Resources */,
 				CCD195EB268847D2007A83B2 /* Main.storyboard in Resources */,
+				CC3EF47726888A6000A6252B /* RandomMealCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,20 +708,32 @@
 				CCD1967D268867A3007A83B2 /* NetworkUtility.swift in Sources */,
 				CCD1969026886880007A83B2 /* Resolver+Extension.swift in Sources */,
 				CCD19680268867A3007A83B2 /* Request.swift in Sources */,
+				CC3EF4AC2688920800A6252B /* ReusableView.swift in Sources */,
 				CCD19684268867A3007A83B2 /* NetworkConstants.swift in Sources */,
 				CCD1968B26886838007A83B2 /* Utility.swift in Sources */,
+				CC3EF4E32688D5E700A6252B /* MealDetailsVC.swift in Sources */,
 				CCD19682268867A3007A83B2 /* NetworkRequest.swift in Sources */,
 				CCD196C026886D38007A83B2 /* CookBookDatasource.swift in Sources */,
+				CC3EF47626888A6000A6252B /* RandomMealCell.swift in Sources */,
 				CCD196B826886CF5007A83B2 /* Datasource.swift in Sources */,
+				CC3EF49426888EA500A6252B /* UIImageView+Extension.swift in Sources */,
 				CCD19681268867A3007A83B2 /* NetworkResponse.swift in Sources */,
+				CC3EF4A4268891FF00A6252B /* UITableView+Extension.swift in Sources */,
 				CCD19695268868A3007A83B2 /* Constants.swift in Sources */,
+				CC3EF4C82688A63B00A6252B /* UIViewController+Extension.swift in Sources */,
+				CC3EF4F22688DF5E00A6252B /* DetailCell.swift in Sources */,
 				CCD196CC26886F2D007A83B2 /* MealModel.swift in Sources */,
 				CCD195E8268847D2007A83B2 /* DashboardVC.swift in Sources */,
 				CCD1967F268867A3007A83B2 /* Service.swift in Sources */,
 				CCD19683268867A3007A83B2 /* NetworkError.swift in Sources */,
+				CC3EF4B42688934100A6252B /* DashboardVC+Data.swift in Sources */,
+				CC3EF4AB2688920800A6252B /* NibLoadableView.swift in Sources */,
+				CC3EF465268889AC00A6252B /* FavoritesVC.swift in Sources */,
 				CCD196D1268871B1007A83B2 /* MealAPI.swift in Sources */,
+				CC3EF46F26888A4600A6252B /* SearchMealCell.swift in Sources */,
 				CCD1967E268867A3007A83B2 /* NetworkService.swift in Sources */,
 				CCD195E4268847D2007A83B2 /* AppDelegate.swift in Sources */,
+				CC3EF4EB2688D64800A6252B /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

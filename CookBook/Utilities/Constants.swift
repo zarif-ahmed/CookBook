@@ -31,4 +31,8 @@ enum Constants {
         case randomMeal = "/v1/1/random.php"
         case searchMeal = "/v1/1/search.php"
     }
+    
+    enum Assets: String {
+        case placeholder
+    }
 }

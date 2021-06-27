@@ -48,8 +48,15 @@ extension CookBookDatasource {
         }
         
         do {
-            let payload = try NetworkUtility.decodeJSON(type: MealAPI.self, from: data)
-            resolver.fulfill(payload.meals.first)
+            let payload   = try NetworkUtility.decodeJSON(type: MealAPI.self, from: data)
+            let realm     = try Realm()
+            let meal      = payload.meals.first
+            let favorite  = realm.objects(MealModel.self).filter({ $0.isLiked && $0.idMeal == meal?.idMeal }).first
+            
+            if favorite != nil {
+                meal?.isLiked = true
+            }
+            resolver.fulfill(meal)
         } catch {
             resolver.reject(type: .decodeJSONFailed)
         }
@@ -85,8 +92,14 @@ extension CookBookDatasource {
         }
         
         do {
-            let payload = try NetworkUtility.decodeJSON(type: MealAPI.self, from: data)
-            resolver.fulfill(payload.meals)
+            let payload   = try NetworkUtility.decodeJSON(type: MealAPI.self, from: data)
+            let realm     = try Realm()
+            let favorites = realm.objects(MealModel.self).filter({ $0.isLiked })
+            let meals     = payload.meals
+            for meal in meals where favorites.contains(where: { $0.idMeal == meal.idMeal }) {
+                meal.isLiked = true
+            }
+            resolver.fulfill(meals)
         } catch {
             resolver.reject(type: .decodeJSONFailed)
         }

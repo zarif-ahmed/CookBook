@@ -25,7 +25,7 @@ final class MealModel: Object, Codable {
     dynamic var dateModified: String?
     
     dynamic var imagePreviewURL: String = ""
-    dynamic var isFavourite: Bool = false
+    dynamic var isLiked: Bool = false
     
     override class func primaryKey() -> String? {
         "idMeal"
