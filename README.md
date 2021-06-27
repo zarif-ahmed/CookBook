@@ -1,10 +1,10 @@
 # CookBook
 
 ## Conditions
-IDE: Xcode
-Language: Swift
-Supported iOS versions: iOS 13.x.x & above
-Third party manager: Cocoapods
+* IDE: Xcode
+* Language: Swift
+* Supported iOS versions: iOS 13.x.x & above
+* Third party manager: Cocoapods
 
 ## Third Party Used
 * **Realm**: To persist the recipe data received
