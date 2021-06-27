@@ -38,6 +38,7 @@ enum NetworkErrorType {
     case requestTimedOut
     case invalidURL
     case validationFailed
+    case decodeJSONFailed
     case invalidNetworkRequest
     case invalidMockRequest
     case other
@@ -62,12 +63,14 @@ enum NetworkErrorType {
             return 10004
         case .validationFailed:
             return 10005
-        case .invalidNetworkRequest:
+        case .decodeJSONFailed:
             return 10006
-        case .invalidMockRequest:
+        case .invalidNetworkRequest:
             return 10007
-        case .other:
+        case .invalidMockRequest:
             return 10008
+        case .other:
+            return 10009
         }
     }
 }

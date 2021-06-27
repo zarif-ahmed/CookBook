@@ -17,7 +17,7 @@
 		CCD195F0268847D5007A83B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD195EE268847D5007A83B2 /* LaunchScreen.storyboard */; };
 		CCD195FB268847D5007A83B2 /* CookBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD195FA268847D5007A83B2 /* CookBookTests.swift */; };
 		CCD19606268847D5007A83B2 /* CookBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19605268847D5007A83B2 /* CookBookUITests.swift */; };
-		CCD1967D268867A3007A83B2 /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19672268867A3007A83B2 /* NetworkHelpers.swift */; };
+		CCD1967D268867A3007A83B2 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19672268867A3007A83B2 /* NetworkUtility.swift */; };
 		CCD1967E268867A3007A83B2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19673268867A3007A83B2 /* NetworkService.swift */; };
 		CCD1967F268867A3007A83B2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19675268867A3007A83B2 /* Service.swift */; };
 		CCD19680268867A3007A83B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19676268867A3007A83B2 /* Request.swift */; };
@@ -28,6 +28,10 @@
 		CCD1968B26886838007A83B2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1968A26886838007A83B2 /* Utility.swift */; };
 		CCD1969026886880007A83B2 /* Resolver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1968F26886880007A83B2 /* Resolver+Extension.swift */; };
 		CCD19695268868A3007A83B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD19694268868A3007A83B2 /* Constants.swift */; };
+		CCD196B826886CF5007A83B2 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD196B726886CF5007A83B2 /* Datasource.swift */; };
+		CCD196C026886D38007A83B2 /* CookBookDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD196BF26886D38007A83B2 /* CookBookDatasource.swift */; };
+		CCD196CC26886F2D007A83B2 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD196CB26886F2D007A83B2 /* MealModel.swift */; };
+		CCD196D1268871B1007A83B2 /* MealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD196D0268871B1007A83B2 /* MealAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +72,7 @@
 		CCD19601268847D5007A83B2 /* CookBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD19605268847D5007A83B2 /* CookBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookUITests.swift; sourceTree = "<group>"; };
 		CCD19607268847D5007A83B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCD19672268867A3007A83B2 /* NetworkHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
+		CCD19672268867A3007A83B2 /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		CCD19673268867A3007A83B2 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CCD19675268867A3007A83B2 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CCD19676268867A3007A83B2 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -79,6 +83,10 @@
 		CCD1968A26886838007A83B2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		CCD1968F26886880007A83B2 /* Resolver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Extension.swift"; sourceTree = "<group>"; };
 		CCD19694268868A3007A83B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CCD196B726886CF5007A83B2 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		CCD196BF26886D38007A83B2 /* CookBookDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookDatasource.swift; sourceTree = "<group>"; };
+		CCD196CB26886F2D007A83B2 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		CCD196D0268871B1007A83B2 /* MealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAPI.swift; sourceTree = "<group>"; };
 		DBC0FE612D815B412F4E5E2D /* libPods-CookBookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CookBookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2D536D04747B492E141A1A /* Pods-CookBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookTests.debug.xcconfig"; path = "Target Support Files/Pods-CookBookTests/Pods-CookBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,7 +169,7 @@
 			children = (
 				CCD1961D26884874007A83B2 /* App Navigation */,
 				CCD1961C26884868007A83B2 /* Features */,
-				CCD19671268867A3007A83B2 /* Service */,
+				CCD196B526886CC3007A83B2 /* Data Layer */,
 				CCD1968826886821007A83B2 /* Utilities */,
 				CCD19620268848B1007A83B2 /* Resources */,
 				CCD1961F268848AB007A83B2 /* Support */,
@@ -248,8 +256,8 @@
 		CCD19671268867A3007A83B2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				CCD19672268867A3007A83B2 /* NetworkHelpers.swift */,
 				CCD19673268867A3007A83B2 /* NetworkService.swift */,
+				CCD19672268867A3007A83B2 /* NetworkUtility.swift */,
 				CCD19674268867A3007A83B2 /* Protocols */,
 				CCD19677268867A3007A83B2 /* Helpers */,
 			);
@@ -300,6 +308,50 @@
 				CCD1968F26886880007A83B2 /* Resolver+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CCD196B526886CC3007A83B2 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				CCD196CA26886F06007A83B2 /* Model */,
+				CCD196B626886CE8007A83B2 /* Datasource */,
+				CCD19671268867A3007A83B2 /* Service */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		CCD196B626886CE8007A83B2 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				CCD196B726886CF5007A83B2 /* Datasource.swift */,
+				CCD196BF26886D38007A83B2 /* CookBookDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		CCD196CA26886F06007A83B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCD196D926887217007A83B2 /* API */,
+				CCD196D826887212007A83B2 /* Realm */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCD196D826887212007A83B2 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				CCD196CB26886F2D007A83B2 /* MealModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		CCD196D926887217007A83B2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CCD196D0268871B1007A83B2 /* MealAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,17 +593,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD1967D268867A3007A83B2 /* NetworkHelpers.swift in Sources */,
+				CCD1967D268867A3007A83B2 /* NetworkUtility.swift in Sources */,
 				CCD1969026886880007A83B2 /* Resolver+Extension.swift in Sources */,
 				CCD19680268867A3007A83B2 /* Request.swift in Sources */,
 				CCD19684268867A3007A83B2 /* NetworkConstants.swift in Sources */,
 				CCD1968B26886838007A83B2 /* Utility.swift in Sources */,
 				CCD19682268867A3007A83B2 /* NetworkRequest.swift in Sources */,
+				CCD196C026886D38007A83B2 /* CookBookDatasource.swift in Sources */,
+				CCD196B826886CF5007A83B2 /* Datasource.swift in Sources */,
 				CCD19681268867A3007A83B2 /* NetworkResponse.swift in Sources */,
 				CCD19695268868A3007A83B2 /* Constants.swift in Sources */,
+				CCD196CC26886F2D007A83B2 /* MealModel.swift in Sources */,
 				CCD195E8268847D2007A83B2 /* DashboardVC.swift in Sources */,
 				CCD1967F268867A3007A83B2 /* Service.swift in Sources */,
 				CCD19683268867A3007A83B2 /* NetworkError.swift in Sources */,
+				CCD196D1268871B1007A83B2 /* MealAPI.swift in Sources */,
 				CCD1967E268867A3007A83B2 /* NetworkService.swift in Sources */,
 				CCD195E4268847D2007A83B2 /* AppDelegate.swift in Sources */,
 			);
@@ -730,6 +786,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CB_SERVER_URL = "https://www.themealdb.com/api/json";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CookBook/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -750,6 +807,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CB_SERVER_URL = "https://www.themealdb.com/api/json";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CookBook/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

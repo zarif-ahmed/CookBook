@@ -1,5 +1,5 @@
 //
-//  NetworkHelpers.swift
+//  NetworkUtility.swift
 //  CookBook
 //
 //  Created by Zarif Ahmed on 6/27/21.
@@ -9,7 +9,7 @@ import Alamofire
 
 final class NetworkUtility {
     
-    static let backgroundQueue = DispatchQueue(label: "sa.background.queue",
+    static let backgroundQueue = DispatchQueue(label: "cb.background.queue",
                                                qos: .background,
                                                attributes: .concurrent)
     

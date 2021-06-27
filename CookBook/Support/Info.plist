@@ -34,5 +34,10 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>CB_CONFIG</key>
+	<dict>
+		<key>CB_SERVER_URL</key>
+		<string>$(CB_SERVER_URL)</string>
+	</dict>
 </dict>
 </plist>

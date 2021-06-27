@@ -26,4 +26,9 @@ enum Constants {
         static let cbConfig   = Bundle.main.infoDictionary?[PlistKeys.configDictionary.rawValue] as? [String: Any]
         static let serverURL  = cbConfig?[PlistKeys.serverURL.rawValue] as? String ?? ""
     }
+    
+    enum Endpoints: String {
+        case randomMeal = "/v1/1/random.php"
+        case searchMeal = "/v1/1/search.php"
+    }
 }
