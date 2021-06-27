@@ -61,6 +61,14 @@ final class DashboardVC: UIViewController {
     
     private func setup() {
         searchTextfield.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapHandler))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapHandler() {
+        searchHandler()
     }
     
     private func resetToRandomMealUI() {
